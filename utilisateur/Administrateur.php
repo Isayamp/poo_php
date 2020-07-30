@@ -6,9 +6,16 @@
 
     class Administrateur extends Utilisateur
     {
-        // Properties
-        private $code_secret;
+        // Property
+        private $code_secret = "Isy@2020";
 
+        // Constructor
+        public function __construct()
+        {
+            // code
+        }
+
+        // Method
     }
     
 
