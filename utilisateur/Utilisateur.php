@@ -6,10 +6,10 @@
     {
         // Properties
         
-        private $nom;
+        private $nom = "User";
         private $prenom;
         private $mail;
-        private $password;
+        private $password = "1234ABC";
         private $date_creation;
 
         // Constructor
