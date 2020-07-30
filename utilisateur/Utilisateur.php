@@ -105,12 +105,12 @@
 
     // Methods
 
-    function seConnecter()
+    function connection()
     {
         echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
     }
     
-    function seDeconnecter()
+    function deconnection()
     {
         echo "Vous êtes bien déconnecter !";
     }
