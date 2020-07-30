@@ -15,7 +15,38 @@
             // code
         }
 
-        // Method
+        // Methods
+
+        public function ajouterUtilisateur($name)
+        {
+            $this->$name = new Utilisateur;
+            echo "New user added successfully ! <br/>";
+        }
+
+        public function supprimerUtilisateur($name)
+        {
+            $name = null;
+        }
+
+        /**
+         * Get the value of code_secret
+         */ 
+        public function getCode_secret()
+        {
+                return $this->code_secret;
+        }
+
+        /**
+         * Set the value of code_secret
+         *
+         * @return  self
+         */ 
+        public function setCode_secret($code_secret)
+        {
+                $this->code_secret = $code_secret;
+
+                return $this;
+        }
     }
     
 
