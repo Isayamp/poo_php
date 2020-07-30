@@ -102,6 +102,17 @@
                 return $this;
         }
     }
+
+    // Methods
+
+    function seConnecter()
+    {
+        echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
+    }
     
+    function seDeconnecter()
+    {
+        echo "Vous êtes bien déconnecter !";
+    }
 
 ?>
