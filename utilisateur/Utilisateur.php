@@ -10,6 +10,7 @@
         private $prenom;
         private $mail;
         private $password;
+        private $date_creation;
 
         // Constructor
         public function __construct($nom, $prenom, $mail, $password)
@@ -18,6 +19,7 @@
             $this->prenom = $prenom;
             $this->mail = $mail;
             $this->password = $password;
+            $this->date_creation = date("Y-m-d");;
         }
 
         // Getters & Setters functions
