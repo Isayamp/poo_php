@@ -27,7 +27,7 @@
         private $prenom;
         private $mail;
         private $password;
-        private $date_creation;
+        protected $date_creation;
 
         // Constructor
         public function __construct($nom, $prenom, $mail)
