@@ -6,20 +6,20 @@
     {
         // Properties
         
-        private $nom = "User";
+        private $nom;
         private $prenom;
         private $mail;
-        private $password = "1234ABC";
+        private $password;
         private $date_creation;
 
         // Constructor
-        public function __construct($nom, $prenom, $mail, $password)
+        public function __construct($nom, $prenom, $mail)
         {
             $this->nom = $nom;
             $this->prenom = $prenom;
             $this->mail = $mail;
-            $this->password = $password;
-            $this->date_creation = date("Y-m-d");;
+            $this->password = "1234ABC";
+            $this->date_creation = date("d-m-Y");;
         }
 
         // Getters & Setters functions
@@ -76,14 +76,11 @@
 
         // Methods
 
-        function connection()
-        {
-                echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
-        }
         
-        function deconnection()
+
+        function changePassword($_password)
         {
-                echo "Vous êtes bien déconnecter !";
+                $this->password = setPassword($_password);
         }
     }
 
