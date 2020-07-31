@@ -54,11 +54,7 @@
                 return $this->mail;
         }
 
-        /**
-         * Set the value of mail
-         *
-         * @return  self
-         */ 
+
         public function setMail($mail)
         {
                 $this->mail = $mail;
@@ -66,37 +62,29 @@
                 return $this;
         }
 
-        /**
-         * Get the value of password
-         */ 
         public function getPassword()
         {
                 return $this->password;
         }
 
-        /**
-         * Set the value of password
-         *
-         * @return  self
-         */ 
         public function setPassword($password)
         {
                 $this->password = $password;
 
                 return $this;
         }
-    }
 
-    // Methods
+        // Methods
 
-    function connection()
-    {
-        echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
-    }
-    
-    function deconnection()
-    {
-        echo "Vous êtes bien déconnecter !";
+        function connection()
+        {
+                echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
+        }
+        
+        function deconnection()
+        {
+                echo "Vous êtes bien déconnecter !";
+        }
     }
 
 ?>
