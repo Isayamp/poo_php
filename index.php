@@ -17,9 +17,9 @@
     <?php
         echo "<h1>PHP orienté Object<br/></h1>";
 
-        $User1 = new Utilisateur;
+        $User1 = new Utilisateur("Isaya", "Pombo", "isayamp@icloud.com", "334543HF");
         
-        echo "$User1->connection()";
+        echo "{$User1->connection()}";
 
     ?>
 
