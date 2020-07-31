@@ -2,6 +2,23 @@
 
     namespace utilisateur\Utilisateur;
 
+    /**
+     *  Trait
+     */
+    trait mainOption
+    {
+        function connection()
+        {
+                echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
+        }
+        
+        function deconnection()
+        {
+                echo "Vous êtes bien déconnecter !";
+        }
+    }
+    
+
     class Utilisateur
     {
         // Properties
@@ -23,7 +40,6 @@
         }
 
         // Getters & Setters functions
-
 
         public function getNom()
         {
@@ -74,9 +90,10 @@
                 return $this;
         }
 
-        // Methods
+        // Call ao Trait in the class
+        use mainOption;
 
-        
+        // Methods
 
         function changePassword($_password)
         {
