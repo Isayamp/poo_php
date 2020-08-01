@@ -1,6 +1,6 @@
 <?php
 
-    namespace utilisateur\Utilisateur;
+    namespace Utilisateur\Utilisateur;
 
     /**
      *  Trait
@@ -89,16 +89,15 @@
 
                 return $this;
         }
-
-        // Call ao Trait in the class
-        use mainOption;
-
-        // Methods
-
-        function changePassword($_password)
+        
+        public function getDate_creation()
         {
-                $this->password = setPassword($_password);
+                return $this->date_creation;
         }
+
+        // Call of Trait mainOption in the class
+        use mainOption;
+        
     }
 
 ?>

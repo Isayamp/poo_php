@@ -1,8 +1,11 @@
 <?php
 
-    namespace Utilisateur\Administrateur\Administrateur;
-    use Utilisateur\Utilisateur\Utilisateur;
-    require_once "Utilisateur/Utilisateur.php";
+    namespace Devoir_oop_php_Isaya\Utilisateur\Administrateur;
+    //namespace Devoir_oop_php_Isaya\Utilisateur\Utilisateur;
+
+    require_once ("Utilisateur.php");
+    use Devoir_oop_php_Isaya\Utilisateur\Utilisateur\Utilisateur;
+    
 
     class Administrateur extends Utilisateur
     {
@@ -13,6 +16,7 @@
         public function __construct($nom, $prenom, $mail)
         {
             $this->code_secret = "A2-1";
+            var_dump("Administrateur creée avec succès !");
         }
 
     
