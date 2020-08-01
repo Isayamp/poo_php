@@ -1,8 +1,11 @@
 <?php 
-    use Utilisateur\Utilisateur\Utilisateur;
-    use Utilisateur\Administrateur\Administrateur;
-    require_once "Utilisateur/Administrateur.php";  
-    require_once "Utilisateur/Utilisateur.php";
+
+    // inclusion des classes
+    use Devoir_oop_php_Isaya\Utilisateur\Utilisateur\Utilisateur;
+    use Devoir_oop_php_Isaya\Utilisateur\Administrateur\Administrateur;
+    require_once ("Utilisateur/Utilisateur.php");
+    require_once ("Utilisateur/Administrateur.php");  
+    
 ?>
 
 <!DOCTYPE html>
@@ -30,16 +33,18 @@
         $User1->deconnection();
 
 
-        //echo "\n\n";
+        echo "<br/><br/>";
 
         //$Admin1 = new Administrateur(/* "Daniel", "Mwanga", "dan.mwa@live.com" */);
-        $Admin1 = new Administrateur("Matine", "Mlela", "Yz6#è");
+        $Admin1 = new Administrateur(/* "Matine", "Mlela", "Yz6#è" */);
 
         $Admin1->setNom("Daniel");
         $Admin1->setPrenom("Byaombe");
-        $Admin1->setMail("Daniel");
+        $Admin1->setMail("DanBya@tuto.com");
 
         $Admin1->connection();
+
+        echo "<br/>Votre code secret pour adminitrateur est : <b>{$Admin1->getCode_secret()}</b> <br/>";
     ?>
 </body>
 </html>
