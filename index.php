@@ -48,7 +48,7 @@
         $Admin1->supprimerUtilisateur("User4"); // New user dropped by Admin1
         $Admin1->verifierUtilisateur($User1); // Check an existance of user by admin
 
-        $Admin1->connection();
+        $Admin1->deconnection();
 
     ?>
 </body>
