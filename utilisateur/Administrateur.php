@@ -1,19 +1,18 @@
 <?php
 
-    namespace Utilisateur\Administrateur;
+    namespace Utilisateur\Administrateur\Administrateur;
     use Utilisateur\Utilisateur\Utilisateur;
     require_once "Utilisateur/Utilisateur.php";
 
     class Administrateur extends Utilisateur
     {
         // Property
-        private $code_secret = "Isy@2020";
-        //const DAETE = date(Y-m-d);
+        private $code_secret;
 
         // Constructor
-        public function __construct()
+        public function __construct($nom, $prenom, $mail)
         {
-            // code
+            $this->code_secret = "A2-1";
         }
 
     
@@ -34,14 +33,24 @@
 
         public function ajouterUtilisateur($name)
         {
-            $name = new Utilisateur();
+            $name = new Utilisateur("Sephani", "Mledja", "se.mle@yopmail.com");
             echo "New user added successfully ! <br/>";
         }
 
-        public function supprimerUtilisateur($name)
+        public function supprimerUtilisateur(Utilisateur $name)
         {
             $name = null;
 
+        }
+
+        public function verifierUtilisateur($name)
+        {
+            if (is_object($User)) {
+                echo "L'utilisateur exixte ! <br/>";
+            } else {
+                echo "L'utilisateur n'exixte pas ! <br/>";
+            }
+            
         }
     }
     
