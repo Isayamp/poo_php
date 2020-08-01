@@ -44,7 +44,12 @@
 
         echo "Votre code secret pour adminitrateur est : <b>{$Admin1->getCode_secret()}</b> <br/>";
 
-        $Admin1->ajouterUtilisateur("User4"); // New user created by Admin1
+        $Admin1->ajouterUtilisateur($User4); // New user created by Admin1
+        $Admin1->supprimerUtilisateur("User4"); // New user dropped by Admin1
+        $Admin1->verifierUtilisateur($User1); // Check an existance of user by admin
+
+        $Admin1->connection();
+
     ?>
 </body>
 </html>
