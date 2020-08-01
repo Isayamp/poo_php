@@ -25,19 +25,17 @@
 
         echo "Votre mot de passe par defaut est {$User1->getPassword()} <br/>"; // Printing of default user password
 
-        // $User1->changePassword("T0CO7@");
-        $User1->setPassword("NNNNNXXX");
-        echo "Votre nouveau mot de passe est {$User1->getPassword()} <br/>";
+        $User1->setPassword("NNNNNXXX"); // Change password
+        echo "Votre nouveau mot de passe est {$User1->getPassword()} <br/>"; // Print new password
         echo "La date de votre inscription est {$User1->getDate_creation()} <br/>"; // Aficher la date d'inscription
 
-        $User1->deconnection();
-
+        $User1->deconnection(); // User deconnection
 
         echo "<br/><br/>";
 
-        //$Admin1 = new Administrateur(/* "Daniel", "Mwanga", "dan.mwa@live.com" */);
-        $Admin1 = new Administrateur(/* "Matine", "Mlela", "Yz6#è" */);
+        $Admin1 = new Administrateur(); // New object Admin1
 
+        // Definition of Admin1 properties
         $Admin1->setNom("Daniel");
         $Admin1->setPrenom("Byaombe");
         $Admin1->setMail("DanBya@tuto.com");
