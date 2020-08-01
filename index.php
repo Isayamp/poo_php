@@ -42,7 +42,9 @@
 
         $Admin1->connection();
 
-        echo "<br/>Votre code secret pour adminitrateur est : <b>{$Admin1->getCode_secret()}</b> <br/>";
+        echo "Votre code secret pour adminitrateur est : <b>{$Admin1->getCode_secret()}</b> <br/>";
+
+        $Admin1->ajouterUtilisateur("User4"); // New user created by Admin1
     ?>
 </body>
 </html>
