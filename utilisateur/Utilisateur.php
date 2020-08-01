@@ -1,6 +1,6 @@
 <?php
 
-    namespace Utilisateur\Utilisateur;
+    namespace Devoir_oop_php_Isaya\Utilisateur\Utilisateur;
 
     /**
      *  Trait
@@ -9,7 +9,7 @@
     {
         function connection()
         {
-                echo "Vous êtes connnectez en tant que {$this->getNom()} et votre mail est {$this->getMail()}";
+                echo "Vous êtes connnectez en tant que <b>{$this->getNom()}</b> et votre mail est <b>{$this->getMail()}</b> <br/>";
         }
         
         function deconnection()
