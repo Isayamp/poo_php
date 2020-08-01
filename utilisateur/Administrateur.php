@@ -1,7 +1,6 @@
 <?php
 
     namespace Devoir_oop_php_Isaya\Utilisateur\Administrateur;
-    //namespace Devoir_oop_php_Isaya\Utilisateur\Utilisateur;
 
     require_once ("Utilisateur.php");
     use Devoir_oop_php_Isaya\Utilisateur\Utilisateur\Utilisateur;
@@ -13,10 +12,10 @@
         private $code_secret;
 
         // Constructor
-        public function __construct($nom, $prenom, $mail)
+        public function __construct(/* $nom, $prenom, $mail */)
         {
             $this->code_secret = "A2-1";
-            var_dump("Administrateur creée avec succès !");
+            print("Administrateur creée avec succès ! <br/><br/>");
         }
 
     
